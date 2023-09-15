@@ -23,4 +23,4 @@ jobs:
       run: npm install
 
     - name: Run tests with pretty formatter
-      run: npm test --format=@cucumber/pretty-formatter
+      run: npx cucumber-js -f @cucumber/pretty-formatter
