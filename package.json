@@ -1,0 +1,20 @@
+{
+  "name": "omni---tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f @cucumber/pretty-formatter"
+  },
+  "author": "Vladyslav",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.38.0",
+    "allure-cucumberjs": "^2.8.1",
+    "allure-js-commons": "^2.8.1",
+    "allure-playwright": "^2.8.1",
+    "cucumber-html-reporter": "^7.1.1"
+  }
+}
