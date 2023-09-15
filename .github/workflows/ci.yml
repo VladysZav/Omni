@@ -22,6 +22,9 @@ jobs:
     - name: Install cucumber and playwright
       run: npm install cucumber playwright @cucumber/cucumber --save-dev
 
+    - name: Install playwright test
+      run: npm install @playwright/test --save-dev
+
     - name: Install pretty-formatter
       run: npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber
       
