@@ -12,7 +12,7 @@ let loginPage
 let mainPage
 
 Before({timeout: 2 * 5000}, async () => {
-    browser = await chromium.launch(config.launchOptions)
+    browser = await chromium.launch()
     page = await browser.newPage({ timeout: 20000 })
 })
 

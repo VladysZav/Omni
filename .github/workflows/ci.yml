@@ -19,8 +19,17 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies
-      run: npm install
+    - name: Install cucumber and playwright
+      run: npm install cucumber playwright @cucumber/cucumber --save-dev
 
+    - name: Install playwright
+      run: npx playwright install
+
+    - name: Install playwright test
+      run: npm install @playwright/test --save-dev
+
+    - name: Install pretty-formatter
+      run: npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber
+      
     - name: Run tests with pretty formatter
-      run: npm test --format=@cucumber/pretty-formatter
+      run: npx cucumber-js -f @cucumber/pretty-formatter
